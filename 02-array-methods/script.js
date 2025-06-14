@@ -11,11 +11,15 @@ const products = [
 const inStockProducts = products.filter((product)=>{
     return product["inStock"]===true
 })
+console.log("////////////////////////// Easy-1 ///////////////")
+
 console.log(inStockProducts)
 
 const bookProducts = products.filter((product)=>{
     return product["category"]==="Books"
 })
+console.log("////////////////////////// Easy-2 ///////////////")
+
 console.log(bookProducts)
 
 //medium 
@@ -23,11 +27,16 @@ console.log(bookProducts)
 const productNames = products.map((product)=>{
     return product["name"]
 })
+console.log("////////////////////////// Medium-1 ///////////////")
+
 console.log(productNames)
 
 const productNamePrice = products.map((product)=>{
     return `${product['name']} - $${product['price']}`
 })
+
+console.log("////////////////////////// Medium-2 ///////////////")
+
 console.log(productNamePrice)
 
 //hard
@@ -35,6 +44,8 @@ console.log(productNamePrice)
 const totalPrice = products.reduce((totalSum,current)=>{
     return totalSum+current['price']
 },0)
+console.log("////////////////////////// Hard-1 ///////////////")
+
 console.log(totalPrice)
 
 const filteredProducts = products.filter((product)=>{
@@ -44,5 +55,6 @@ const filteredProducts = products.filter((product)=>{
 const electronicsName = filteredProducts.map((product)=>{
     return product['name']
 })
+console.log("////////////////////////// Hard-2 ///////////////")
 
 console.log(electronicsName)
