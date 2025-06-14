@@ -26,4 +26,4 @@
 
 <h3>Assignment 3: Combining DOM & Array Methods</h3>
 
-![alt text](image.png)
+![alt text](JS3.png)
